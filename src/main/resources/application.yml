@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    username: dyl0115
+    password:
+    url: jdbc:h2:tcp://localhost/~/devTracker
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true
+
+logging:
+  level:
+    org.org.hibernate.SQL: debug
+
+server:
+  servlet:
+    session:
+      timeout: 1800
